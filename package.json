@@ -1,0 +1,14 @@
+{
+  "name": "symphony-dogfood-ot15",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Isolated supervised dogfood target for github-symphony OT-15.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "lint": "node --check src/*.js test/*.js",
+    "test": "node --test"
+  }
+}

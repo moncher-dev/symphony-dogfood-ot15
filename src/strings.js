@@ -1,0 +1,12 @@
+/**
+ * Converts free text into a lowercase, hyphen-separated slug.
+ * @param {string} value
+ * @returns {string}
+ */
+export function slugify(value) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
