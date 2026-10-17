@@ -10,9 +10,10 @@ Work is dispatched by a GitHub Symphony daemon from the
 ## Usage
 
 ```js
-import { slugify } from "./src/strings.js";
+import { slugify, truncate } from "./src/strings.js";
 
 slugify("Hello World"); // "hello-world"
+truncate("Hello World", 6); // "Hello…"
 ```
 
 ## Development
